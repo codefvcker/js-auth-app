@@ -1,15 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Auth app</title>
 </head>
 
 <body>
+    <div id="sidebar">
+        <div class="mui--text-white mui--text-display1 mui--align-vertical">
+            AUTH APP
+            <br>
+            <small class='author'>by codefvcker</small>
+        </div>
+    </div>
+    <div id="content" class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="mui-col-sm-10 mui-col-sm-offset-1">
+                <br>
+                <br>
+                <div class="mui--text-black-54 mui--text-body2">Ask ur question</div>
+                <div class="mui-divider"></div>
+                <br>
 
+                <!-- Form -->
+                <form class="mui-form" id='form'>
+                    <div class="mui-textfield mui-textfield--float-label">
+                        <input type="text" id='question-input' required minlenght='10' maxlenght='256'>
+                        <label for='question-input'>Type ur question here:</label>
+                    </div>
+                    <button type="submit" class="mui-btn mui-btn--raised mui-btn--primary" disabled>
+                        Submit
+                    </button>
+                </form>
+
+                <br>
+                <br>
+                <div class="mui--text-black-54 mui--text-body2">Question list</div>
+                <div class="mui-divider"></div>
+                <br>
+
+                <div id='list'>List</div>
+
+                <div class="mui--text-headline">MUI Acquires New Features</div>
+                <div class="mui--text-black-54">By <a href="#">Team MUI</a> 1 week ago</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis aliquam ipsum sed dignissim.
+                </div>
+                <br>
+
+            </div>
+        </div>
 </body>
 
 </html>
